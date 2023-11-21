@@ -1,5 +1,5 @@
 # Trust-System
-Trust system is a platform for general public
+Trust system is a blockchain platform for general public
 
 
 Project Documents
