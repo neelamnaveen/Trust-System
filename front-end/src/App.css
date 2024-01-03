@@ -1,0 +1,7 @@
+
+@media screen and (max-width: 1800px) {
+  .loanForm {
+    display: flex;
+    flex-direction: column;
+  }
+}
