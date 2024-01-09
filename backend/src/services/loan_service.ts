@@ -1,6 +1,6 @@
 import { LoanSchema } from "@/db_schemas/loan";
 import { Loan } from '@/models/loan';
-import { Controller, Fort, singleton } from "fortjs";
+import { singleton } from "fortjs";
 import keccak256 from "keccak256";
 import { UserService } from "./user_service";
 

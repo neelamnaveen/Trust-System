@@ -1,10 +1,8 @@
 
 import { UserValidatorGuard } from "@/guards/user_validator_guard";
 import { UserService } from "@/services/user_service";
-import { UserAuthentication } from "@/shields/user_authentication_shield";
-import { worker, Controller, HTTP_METHOD, HTTP_STATUS_CODE, http, jsonResult, textResult, route, singleton, guards, shields, Guard, TGuard } from "fortjs";
+import { worker, Controller, HTTP_METHOD, HTTP_STATUS_CODE, http, jsonResult, route, singleton, guards } from "fortjs";
 
-// @shields(UserAuthentication)
 export class UserController extends Controller {
 
     service: UserService;

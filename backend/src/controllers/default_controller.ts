@@ -1,4 +1,3 @@
-import { UserService } from "@/services/user_service";
 import { Controller, viewResult, assign, http, Fort, worker, HTTP_METHOD, textResult } from "fortjs";
 export class DefaultController extends Controller {
 

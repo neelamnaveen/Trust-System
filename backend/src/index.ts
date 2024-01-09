@@ -7,10 +7,13 @@ import mongoose from "mongoose";
 import { UserService } from "./services/user_service";
 
 async function initDatabase() {
-    await mongoose.connect("", {
-
-    });
-    console.log('db connected');
+    try{
+        await mongoose.connect(process.env.MONGO_URI, {
+        });
+        console.log('db connected');
+    } catch(err) {
+        console.log("Error occured while connecting to db: ", err);
+    }
 }
 
 export const createApp = async () => {

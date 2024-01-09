@@ -1,4 +1,4 @@
-import { Shield, textResult,  redirectResult } from "fortjs";
+import { Shield,  redirectResult } from "fortjs";
 export class UserAuthentication extends Shield {
 
     async protect() {

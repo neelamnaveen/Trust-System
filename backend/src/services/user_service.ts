@@ -1,6 +1,5 @@
 import { UserSchema } from "@/db_schemas/user";
 import { User } from '@/models/user';
-import { HTTP_STATUS_CODE, jsonResult } from "fortjs";
 
 export class UserService {
 
