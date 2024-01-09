@@ -41,9 +41,11 @@ export const createApp = async () => {
     ))
     
     await initDatabase();
+    
+    Fort.port = parseInt(process.env.PORT) || Fort.port;
 
     await Fort.create();
-    process.env.APP_URL = `https://trust-system.onrender.com:${process.env.PORT || Fort.port}`;
+    process.env.APP_URL = `https://trust-system.onrender.com:${Fort.port}`;
 };
 if (process.env.NODE_ENV !== "test") {
     createApp().then(() => {
